@@ -1,0 +1,70 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+
+%---------------
+
+\title{\LaTeX}
+\author{Sergio Vega García}
+%\date[08-03-2013]{8 de marzo de 2013}
+
+%----------------
+
+\begin{document}
+
+\begin{figure}
+  \begin{center}
+  \includegraphics[width=0.20\textwidth]{img/ullesc.eps}
+  \end{center}
+  \caption{Logo de la ULL}
+
+\end{figure}
+
+%----------------
+ 
+ \maketitle
+ 
+ \LaTeX (escrito LaTeX en texto llano) es un sistema de composición de textos, orientado especialmente a la creación de libros, 
+ documentos científicos y técnicos que contengan fórmulas matemáticas.\footnote[b]{Extraído de Wikipedia}
+ 
+ \pagebreak
+ 
+ \section{Descripción}
+ 
+ LaTeX es un sistema de composición de textos que está formado mayoritariamente por órdenes construidas a partir de comandos de 
+ TeX —un lenguaje «de nivel bajo», en el sentido de que sus acciones últimas son muy elementales— 
+ pero con la ventaja añadida de «poder aumentar las capacidades de LaTeX utilizando comandos propios del TeX descritos en The TeXbook».
+ Esto es lo que convierte a LaTeX en una herramienta práctica y útil pues, a su facilidad de uso, se une toda la potencia de TeX. 
+ Estas características hicieron que LaTeX se extendiese rápidamente entre un amplio sector científico y técnico, 
+ hasta el punto de convertirse en uso obligado en comunicaciones y congresos, y requerido por determinadas revistas a 
+ la hora de entregar artículos académicos.
+ 
+    \subsection{Código abierto}
+    
+    Su código abierto permitió que muchos usuarios realizasen nuevas utilidades que extendiesen sus capacidades con objetivos muy variados, a veces ajenos a la intención con la que fue creado: aparecieron diferentes dialectos de LaTeX que, a veces, eran incompatibles entre sí. Para atajar este problema, en 1989 Lamport y otros desarrolladores iniciaron el llamado «Proyecto LaTeX3». En el otoño boreal de 1993 se anunció una reestandarización completa de LaTeX, mediante una nueva versión que incluía la mayor parte de estas extensiones adicionales (como la opción para escribir transparencias o la simbología de la American Mathematical Society) con el objetivo de dar uniformidad al conjunto y evitar la fragmentación entre versiones incompatibles de LaTeX 2.09. Esta tarea la realizaron Frank Mittlebach, Johannes Braams, Chris Rowley y Sebastian Rahtz junto al propio Leslie Lamport. Actualmente cada año se ofrece una nueva versión, aunque las diferencias entre una y otra suelen ser muy pequeñas y siempre bien documentadas
+    
+    \subsection{Arquitectura modular}
+    
+    Con todo, además de todas las nuevas extensiones, la característica más relevante de este esfuerzo de re-estandarización fue la arquitectura modular: se estableció un núcleo central (el compilador) que mantiene las funcionalidades de la versión anterior pero permite incrementar su potencia y versatilidad por medio de diferentes paquetes que solo se cargan si son necesarios. De ese modo, LaTeX dispone ahora de innumerables paquetes para todo tipo de objetivos, muchos dentro de la distribución oficial, y otros realizados por terceros, en algunos casos para usos especializados.
+    
+ \section{Uso}
+ 
+ LaTeX presupone una filosofía de trabajo diferente a la de los procesadores de texto habituales (conocidos como WYSIWYG, es decir, «lo que ves es lo que obtienes») y se basa en comandos. Tradicionalmente, este aspecto se ha considerado una desventaja (probablemente la única). Sin embargo, LaTeX, a diferencia de los procesadores de texto de tipo WYSIWYG, permite a quien escribe un documento centrarse exclusivamente en el contenido, sin tener que preocuparse de los detalles del formato. Además de sus capacidades gráficas para representar ecuaciones, fórmulas complicadas, notación científica e incluso musical, permite estructurar fácilmente el documento (con capítulos, secciones, notas, bibliografía, índices analíticos, etc.), lo cual brinda comodidad y lo hace útil para artículos académicos y libros técnicos.
+ 
+ \begin{table}[h] 
+ \begin{tabular}{|c|c|c|}
+   
+   \hline
+   f(x)=x+2 & solución  \\
+  \hline
+   0 & 2 \\ \hline
+   
+ \end{tabular}
+ 
+ \caption{Ejemplo de tabla en \LaTeX}
+ \end{table}
+
+ 
+\end{document}
